@@ -6,8 +6,8 @@ import classes from "./catagorie.module.css";
 function Catagorie() {
   return (
     <section className={classes.catagory_container}>
-      {catagoryImage.map((info) => {
-        return <CatagoriesCard data={info} />;
+      {catagoryImage?.map((info, i) => {
+        return <CatagoriesCard key={i} data={info} />;
       })}
     </section>
   );

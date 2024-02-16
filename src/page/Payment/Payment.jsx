@@ -87,7 +87,7 @@ function Payment() {
           <h3>Review items and delivery</h3>
           <div>
             {basket?.map((item) => {
-              return <Productcard product={item} flex={true} />;
+              return <Productcard product={item} flex={true} key={item.id} />;
             })}
           </div>
         </div>
